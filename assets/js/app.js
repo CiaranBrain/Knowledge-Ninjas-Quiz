@@ -1,11 +1,13 @@
-const startBtn = document.getElementById('start-btn');
-const difficultySelect = document.getElementById('difficulty');
-const quizContainer = document.getElementById('quiz-container');
-const quizContent = document.getElementById('quiz-content');
-const questionNumber = document.getElementById('question-number');
-const scoreContainer = document.getElementById('score-container');
-const resultsPage = document.getElementById('results-page');
-const finalScore = document.getElementById('final-score');
+
+//dunno what this is?
+// const startBtn = document.getElementById('start-btn');
+// const difficultySelect = document.getElementById('difficulty');
+// const quizContainer = document.getElementById('quiz-container');
+// const quizContent = document.getElementById('quiz-content');
+// const questionNumber = document.getElementById('question-number');
+// const scoreContainer = document.getElementById('score-container');
+// const resultsPage = document.getElementById('results-page');
+// const finalScore = document.getElementById('final-score');
 
 // api array for quiz questions at all difficulties 
 const apiArray = {
@@ -62,7 +64,7 @@ function displayCurrentQuestion() {
   // Function to handle answer selection
   function handleAnswerSelection(answer) {
     selectAnswer(answer);
-    // Move to the next question (change 500 to slow now clicking)
+    // Move to the next question (change 500 to slow down spam clicking)
     setTimeout(() => {
       currentQuestionIndex++;
       if (currentQuestionIndex < quizData.length) {
@@ -115,7 +117,7 @@ function updateScore() {
   scoreContainer.textContent = `Score: ${score}`;
 }
 
-// End Quiz function --- needs changed!!
+// End Quiz function
 
 function endQuiz() {
   // Hide quiz content and start section
@@ -130,14 +132,15 @@ function endQuiz() {
 }
 
 
-  // Reset Quiz Function
+// Restarts quiz once executed - resets all elements and score
 function resetQuiz() {
   currentQuestionIndex = 0;
+  quizData = null;
   score = 0;
   updateScore();
-  document.getElementById("question-number").textContent = "";
+  document.getElementById("quiz-content").innerHTML = "";
+  document.getElementById("quiz-content").style.display = "block";
+  document.getElementById("start-section").style.display = "block";
+  document.getElementById("results-page").style.display = "none";
+  document.getElementById("final-score").innerHTML = "";
 }
-
-// fetchData("easy");
-// fetchData("medium");
-// fetchData("hard");
