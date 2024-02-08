@@ -1,11 +1,13 @@
-const correctScoreElement = document.getElementById('correct-score');
-const totalQuestionsElement = document.getElementById('total-questions');
-const questionElement = document.getElementById('Question');
-const answerButtons = document.querySelectorAll('.btn');
-const checkAnswerButton = document.getElementById('check-answer');
-const playAgainButton = document.getElementById('play-again');
+const startBtn = document.getElementById('start-btn');
+const difficultySelect = document.getElementById('difficulty');
+const quizContainer = document.getElementById('quiz-container');
+const quizContent = document.getElementById('quiz-content');
+const questionNumber = document.getElementById('question-number');
+const scoreContainer = document.getElementById('score-container');
+const resultsPage = document.getElementById('results-page');
+const finalScore = document.getElementById('final-score');
 
-let correctAnswer ="", correctScore =askedCount =0, totalQuestion =20;
+// api array for quiz questions at all difficulties 
 const apiArray = {
   easy: {
     url: "https://opentdb.com/api.php?amount=20&category=9&difficulty=easy&type=multiple"
@@ -24,24 +26,19 @@ let quizData;
 let score = 0;
 
 // fetching difficulty function (might need to use async b4 function and try after)
-function fetchData(difficulty) {
-  const url = apiArray[difficulty].url;
-  fetch(url)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      } else if (response.status === 429) {
-        console.log("You've made too many requests in a short period.");
-        return;
-      }
-      return response.json();
-    })
-    .then((data) => {
-      console.log(data);
-      quizData = data.results;
-      displayCurrentQuestion();
-    })
-    .catch((error) => console.error("Could not fetch quiz data:", error));
+async function fetchData(difficulty) {
+  try {
+    const url = apiArray[difficulty].url;
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    quizData = data.results;
+    displayCurrentQuestion();
+  } catch (error) {
+    console.error("Could not fetch quiz data:", error);
+  }
 }
 
 // Display current question function (should have broken into more smaller functions)
@@ -105,8 +102,8 @@ function selectAnswer(selectedAnswer) {
 
 // start quiz function
 function startQuiz() {
-  restetQuiz()
-  const difficulty = document.getElementById('difficulty').ariaValueMax;
+  resetQuiz()
+  const difficulty = document.getElementById('difficulty').value;
   fetchData(difficulty);
   //removes difficulty selector from the window once clicked
   document.getElementById('start-section').style.display = 'none';
@@ -119,8 +116,26 @@ function updateScore() {
 }
 
 // End Quiz function --- needs changed!!
+
 function endQuiz() {
-  alert(`Quiz Finsined! Your Final Score was ${score}/${quizData.length}`);
+  // Hide quiz content and start section
+  document.getElementById("quiz-content").style.display = "none";
+  document.getElementById("start-section").style.display = "none";
+  
+  // Show the results page
+  document.getElementById("results-page").style.display = "block";
+  
+  // Update final score display
+  document.getElementById("final-score").innerHTML = `Your final score = ${score}/${quizData.length}`;
+}
+
+
+  // Reset Quiz Function
+function resetQuiz() {
+  currentQuestionIndex = 0;
+  score = 0;
+  updateScore();
+  document.getElementById("question-number").textContent = "";
 }
 
 // fetchData("easy");
