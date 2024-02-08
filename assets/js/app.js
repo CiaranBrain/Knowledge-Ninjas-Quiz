@@ -1,3 +1,12 @@
+const startBtn = document.getElementById('start-btn');
+const difficultySelect = document.getElementById('difficulty');
+const quizContainer = document.getElementById('quiz-container');
+const quizContent = document.getElementById('quiz-content');
+const questionNumber = document.getElementById('question-number');
+const scoreContainer = document.getElementById('score-container');
+const resultsPage = document.getElementById('results-page');
+const finalScore = document.getElementById('final-score');
+
 // api array for quiz questions at all difficulties 
 const apiArray = {
   easy: {
@@ -107,11 +116,21 @@ function updateScore() {
 }
 
 // End Quiz function --- needs changed!!
+
 function endQuiz() {
-  alert(`Quiz Finsined! Your Final Score was ${score}/${quizData.length}`);
+  // Hide quiz content and start section
+  document.getElementById("quiz-content").style.display = "none";
+  document.getElementById("start-section").style.display = "none";
+  
+  // Show the results page
+  document.getElementById("results-page").style.display = "block";
+  
+  // Update final score display
+  document.getElementById("final-score").innerHTML = `Your final score = ${score}/${quizData.length}`;
 }
 
-// Reset Quiz Function
+
+  // Reset Quiz Function
 function resetQuiz() {
   currentQuestionIndex = 0;
   score = 0;
