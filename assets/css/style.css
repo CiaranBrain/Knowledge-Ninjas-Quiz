@@ -6,123 +6,6 @@
    
 
 }
-
-.difficulty {
-    /* padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-     */
-
-    background-color: white;
-    max-width: 70%;
-    margin: 100px auto 0;
-    border-radius: 10px;
-    padding: 30px;
-    margin-top: 5em;
-    border-color: black;
-}
-
-/* Green Section */
-.difficulty.green {
-    background-color: #72efe9;
-    color: #111111;
-}
-
-/* Yellow Section */
-.difficulty.yellow {
-    background-color: #ffe066;
-    color: #111111;
-}
-
-/* Red Section */
-.difficulty.red {
-    background-color: #ff6961;
-    color: #111111;
-}
- 
-/* Green hover */
-.difficulty.green:hover {
-    background-color: #57bbb6;
-    color: #111111;
-}
-
-/* Yellow hover */
-.difficulty.yellow:hover {
-    background-color: #af9a45;
-    color: #111111;
-}
-
-/* Red hover */
-.difficulty.red:hover {
-    background-color: #9c413c;
-    color: #111111;
-}
-
-/* Footer */
-#social-networks {
-    text-align: center;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-
-#social-networks i {
-    font-size: 160%;
-    padding: 5%;
-    color: #3a3a3a;
-}
-
-/* Add hover effect to change background color to grey */
-.answer:hover {
-    background-color: #8d8d8d;
-}
-
-.app{
-    background-color: grey;
-    width: 50%;
-    max-width: 600px;
-    margin: 100px auto 0;
-    border-radius: 10px;
-    padding: 30px;
-    margin-top: -2em;
-    border-color: black;
-    align-items: center;
-    
-}
-.quiz
-{ padding: 20px 0;}
-
-.btn {
-    background: white;
-    color: black;
-    font-weight: 500;
-    width: 100%;
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: left;
-    border-radius: 4px;
-    cursor: pointer;
-}
-.quiz h2 {
-    font-size: 18px;
-    color: black;
-    font-weight: 600;
-}
-
-.app h1 {
-    font-size: 25px;
-    color: black;
-    font-weight: 600;
-    border-bottom: 1px solid black;
-    padding-bottom: 30px;
-    text-align: center;
-    }
-   
    .quiz-score {
     text-align: right;
     font-weight: 600;
@@ -146,6 +29,34 @@
     font-weight: 600;
     font-size: 1.2rem;
     
-    
-    
    }
+
+   /* footer styling */
+.footer {
+    padding: 20px;
+    background-color: beige;
+    text-align: center;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: #495057;
+    font-size: 24px;
+}
+
+.social-icons a:hover {
+    color: rgb(163, 33, 33);
+}
