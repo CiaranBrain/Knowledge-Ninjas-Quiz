@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Jaldi:wght@400;700&family=Protest+Revolution&family=Single+Day&display=swap');
+
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'roboto', sans-serif;
 }
 
 body {
@@ -12,14 +14,35 @@ body {
     background-position: center center;
 }
 
+.resized-image {
+    height: 200px;
+    width: 200px;
+}
+
 h1 {
-    font-size: 4em;
+    font-size: 6em;
+    font-family: "Architects Daughter", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h5 {
+    font-size: 2.25rem;
+    font-family: "Architects Daughter", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: saddlebrown;
 }
 
 .container {
-    max-width: 600px;
-    margin: 100px auto;
-    padding: 20px;
+    font-family: "Jaldi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    max-width: 800px;
+
+    
+    padding: 50px;
     background-color: rgba(32, 32, 32, 0.9);
     border-radius: 30px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
@@ -29,8 +52,12 @@ h1 {
 
 /* score color */
 
-#score-container  {
+#score-container {
     color: #28a745;
+}
+
+#score-container span {
+    color: #ff3300;
 }
 
 /* answers */
@@ -44,8 +71,8 @@ h1 {
 
 .options-list li {
     cursor: pointer;
-    padding: 10px;
-    margin: 5px;
+    padding: 30px;
+    margin: 30px;
     background-color: #007bff;
     color: #fff;
     border: 1px solid black;
