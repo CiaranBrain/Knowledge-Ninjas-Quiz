@@ -16,11 +16,8 @@
 <body>
 
     <body>
-        <header>
-            <h1 class="text-center"> Knowledge Ninjas Quiz </h1>
-        </header>
-        <h2 class="text-center">General Knowledge Quiz</h2>
 
+<<<<<<< HEAD
         <div class="container">
             <div class="row">
                 <div class="col text-center">
@@ -49,11 +46,45 @@
                         </section>
                     </div>
                 </div>
+=======
+        
+        <!-- TITLE, SCORE HERE -->
+        <div class="container" id="quiz-container">
+            <h1 class="mb-4 text-center">Knowledge Ninjas Quiz</h1>
+            <div class="d-flex justify-content-between align-items-center">
+                <div id="question-number"></div>
+                <div id="score-container">Score: <span id="score">0</span> </div>
+            </div>
+
+
+            <!-- DIFFICULTY SELECTOR HERE W/ START BUTTON-->
+            <div id="start-section" class="text-center">
+                <label for="difficulty">Select difficulty:</label>
+                <select id="difficulty" class="form-select form-select-lg text-center" onchange="changeDifficulty()">
+                    <option value="easy">EASY</option>
+                    <option value="medium">MEDIUM</option>
+                    <option value="hard">HARD</option>
+                </select>
+
+                <button id="start-btn" class="btn btn-dark p-3 m-5" onclick="startQuiz()">Start Quiz</button>
+            </div>
+
+
+            <!--QUESTIONS AND ANSWERS GET DISPLAYED HERE-->
+            <div id="quiz-content" class="quiz-question-container"></div>
+
+
+            <!--FINAL RESULTS PAGE HERE (NOT COMPLETED, MANJULA TO CHECK? hidden for now)-->
+            <div id="results-page" class="text-center" style="display: none;">
+                <h2>Quiz Results</h2>
+                <p id="final-score" class="display-4 mb-4">Your final score = <span id="score"></span> </p>
+                <button class="btn btn-dark" onClick='resartQuiz()'>Restart Quiz!</button>
+>>>>>>> 50b5222f36e3c3d2ef37f43fcac5ab7a1a6e8c1d
             </div>
         </div>
 
 
-
+        <!--FOOTER HERE W/SOCIAL LINKS-->
         <footer class="footer fixed-bottom">
             <div class="social-media">
                 <p class="text-3 text-center">Challenge your friends! </p>
