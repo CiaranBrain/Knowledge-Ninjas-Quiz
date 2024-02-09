@@ -68,6 +68,7 @@ h5 {
     color: #ff3300;
 }
 
+/* start button */
 #start-btn {
     background-color: rgb(169,121,98);
     border: 3px solid rgba(43, 26, 19, 1);
@@ -78,6 +79,16 @@ h5 {
     border: 3px solid rgb(7, 148, 14);
 }
 
+/* restart button */
+#restart-btn {
+    background-color: rgb(169,121,98);
+    border: 3px solid rgba(43, 26, 19, 1);
+}
+
+#restart-btn:hover {
+    background-color: rgb(46, 216, 4);
+    border: 3px solid rgb(7, 148, 14);
+}
 /* answers */
 
 .options-list {
