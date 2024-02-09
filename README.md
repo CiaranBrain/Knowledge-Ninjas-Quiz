@@ -87,12 +87,16 @@ In this bug example we have an issue where "quotation-marks" aren't being displa
 
 Would like to have a different background for the levels. We have a sample that we wanted to use, which will be used in the next iteration. 
 
-[Future-iteration1](assets/readme/images/background-image-FI1.png)
-[Future-iteration2](assets/readme/images/bg-img-f2.png)
+![Future-iteration1](assets/readme/images/background-image-FI1.png)
+![Future-iteration2](assets/readme/images/bg-img-f2.png)
 
 We would also like to have a 20 second timer for the user per question and a reset button on each page so the user can go to the start of the qui at any time.
 
 Also we would like the opportunity fot the user to have the option to see the answer before making the choice on which one to pick.
+
+### Validation Checks 
+
+![HTML-Check](assets/readme/images/html-check.png)
 
 
 ### Credits
