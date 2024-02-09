@@ -2,13 +2,6 @@
 ![Knowledge Ninjas Quiz Mock up](assets/readme/images/amIResponsive.png)
 
 
-## Names of Contributors
-
-Ciaran Brain,  
-David Wiseman,
-Manjula Lal,
-
-
 Welcome to Knowledge-Ninja's online quiz game! 🧠
 
 Whether you are a seasoned quizmaster or just a casual trivia enthusiasst,
@@ -24,6 +17,13 @@ sports/movies/literary knowledge or personality assessment.
 
 Site owner's goal:
 - The goal of the site is to provide a challenging quiz to entertain online users.
+
+## Names of Contributors 🗣️
+
+Ciaran Brain,  
+David Wiseman,
+Manjula Lal,
+
 
 ## Features 🚀
 
@@ -60,16 +60,28 @@ Stages before Final design
 
 
 After each members skills were assesed, the project was divided on an individual basis. 
-### Bugs Fixed and Unfixed
+### Bugs Fixed and Unfixed 🕷️
 
-### Technology used
-Miro-board
-Github
-VSCode
-Java-script
-Bootstrap
-CSS
-API
+![bug](assets/readme/images/bug.png)
+
+In this bug example we have an issue where "quotation-marks" aren't being displayed properly in the questions.
+
+### Technology used:
+-Miro-board
+
+-Github
+
+-GitPod
+
+-VSCode
+
+-Java-script (vanilla)
+
+-Bootstrap
+
+-CSS
+
+-API
 
 ### Future Features and Modifications
 
