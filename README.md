@@ -20,10 +20,23 @@ Site owner's goal:
 
 ## Names of Contributors 🗣️
 
-Ciaran Brain,  
-David Wiseman,
-Manjula Lal,
+*Ciaran Brain* 🎤  
+*David Wiseman* 🎤  
+*Manjula Lal* 🎤
 
+
+### Table of Contents
+1. [Overview](#overview)
+2. [Names of Contributors](#names-of-contributors)
+3. [Features](#features)
+   - [Interactive Quizzes](#interactive-quizzes)
+   - [Score Tracker](#score-tracker)
+   - [Development Strategy and Wireframe](#development-strategy-and-wireframe)
+4. [Bugs Fixed and Unfixed](#bugs-fixed-and-unfixed)
+5. [Technology Used](#technology-used)
+6. [Future Features and Modifications](#future-features-and-modifications)
+7. [Validation Checks](#validation-checks)
+8. [Credits](#credits)
 
 ## Features 🚀
 
@@ -35,7 +48,7 @@ The score is shown to the user throughout the quich and on the final page where 
 
 ![results](assets/readme/images/results.png)
 
-### 🎨 Development Strategy and Wireframe 
+## 🎨 Development Strategy and Wireframe 
 
  Initially the team started of using a Miro Board for ideation.
 
@@ -60,30 +73,24 @@ Stages before Final design
 
 
 After each members skills were assesed, the project was divided on an individual basis. 
-### Bugs Fixed and Unfixed 🕷️
+## Bugs Fixed and Unfixed 🕷️
 
 ![bug](assets/readme/images/bug.png)
 
 In this bug example we have an issue where "quotation-marks" aren't being displayed properly in the questions.
 
-### Technology used:
+## Technology used:
+
 -Miro-board
-
 -Github
-
 -GitPod
-
 -VSCode
-
--Java-script (vanilla)
-
--Bootstrap
-
+-Java-script (vanilla ES6)
+-Bootstrap v5.3
 -CSS
-
 -API
 
-### Future Features and Modifications
+## Future Features and Modifications
 
 Would like to have a different background for the levels. We have a sample that we wanted to use, which will be used in the next iteration. 
 
@@ -94,12 +101,12 @@ We would also like to have a 20 second timer for the user per question and a res
 
 Also we would like the opportunity fot the user to have the option to see the answer before making the choice on which one to pick.
 
-### Validation Checks 
+## Validation Checks 
 
 ![HTML-Check](assets/readme/images/html-check.png)
 
 
-### Credits
+## Credits
 
 First and foremost, we would like to thank David Calikes, Martin, Kevin and Miklos at the code institute for the support and the knowledge they have provided us to complete this project.
 
