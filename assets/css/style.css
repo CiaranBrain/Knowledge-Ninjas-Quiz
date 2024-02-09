@@ -12,6 +12,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    font-size: 16px;
 }
 
 .resized-image {
@@ -24,6 +25,7 @@ h1 {
     font-family: "Architects Daughter", cursive;
     font-weight: 400;
     font-style: normal;
+    text-shadow: 1px 6px 20px rgba(43, 26, 19, 1);
 }
 
 h5 {
@@ -31,6 +33,7 @@ h5 {
     font-family: "Architects Daughter", cursive;
     font-weight: 400;
     font-style: normal;
+    text-shadow: 1px 6px 20px saddlebrown;
     color: saddlebrown;
 }
 
@@ -38,17 +41,18 @@ h5 {
     font-family: "Jaldi", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 2rem;
     max-width: 800px;
+
 
     background: url(../img/bg-paper.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 2px solid rgba(43, 26, 19, 1);
+    
+
+
+    border: 3px ridge rgba(43, 26, 19, 1);
     padding: 50px;
-    /* background-color: rgba(113,77,61,0.9); */
     border-radius: 30px;
     box-shadow: 5px 5px 25px 0px #000000;
     color: rgba(43, 26, 19, 1);
@@ -64,6 +68,16 @@ h5 {
     color: #ff3300;
 }
 
+#start-btn {
+    background-color: rgb(169,121,98);
+    border: 3px solid rgba(43, 26, 19, 1);
+}
+
+#start-btn:hover {
+    background-color: rgb(46, 216, 4);
+    border: 3px solid rgb(7, 148, 14);
+}
+
 /* answers */
 
 .options-list {
@@ -76,20 +90,23 @@ h5 {
 .options-list li {
 
     font-family: "Jaldi", sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
     cursor: pointer;
-    padding: 30px;
+    padding: 1rem;
     margin: 30px;
-    background-color: rgb(108,108,108);
-    color: white;
-    border: 1px solid black;
-    border-radius: 8px;
+    background-color: rgba(169,121,98, 0.8);
+    color: black;
+    border: 5px solid  rgba(43, 26, 19, 0.5);
+    border-radius: 30px;
     transition: background-color 0.3s;
 }
 
 .options-list li:hover {
-    background-color: rgb(158, 131, 121);
+    background-color: rgba(43, 26, 19, 1);
+    border: 5px solid rgba(169,121,98, 0.5);
+
+    color: white;
 }
 
 /* end of answers */
@@ -98,6 +115,7 @@ h5 {
 .footer {
     background-color: rgba(43, 26, 19, 1);
     text-align: center;
+    color:  rgb(169,121,98);
 }
 
 .social-icons {
@@ -116,10 +134,12 @@ h5 {
 }
 
 .social-icons a {
-    color: #495057;
-    font-size: 2em;
+    color: rgb(169,121,98);
+    font-size: 2rem;
 }
 
 .social-icons a:hover {
-    color: rgb(163, 33, 33);
+    color: rgb(222,222,222);
 }
+
+/* footer end */ 
